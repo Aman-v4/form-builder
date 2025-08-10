@@ -26,7 +26,6 @@ function PreviewForm() {
     const found = forms.find((f: FormSchema) => f.id === formId);
     setForm(found || null);
 
-    // Initialize values with default values from form fields
     if (found) {
       const initValues: { [key: string]: any } = {};
       found.fields.forEach(field => {

@@ -12,7 +12,7 @@ export interface FormField {
   required: boolean;
   defaultValue?: any;
   validations?: ValidationRule[];
-  options?: string[]; // for select, radio, checkbox
+  options?: string[];
   derived?: {
     parentIds: string[];
     formula: string;
